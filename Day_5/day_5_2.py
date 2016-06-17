@@ -6,8 +6,6 @@ while True:
     except EOFError:
         print ("Error: EOF or empty input!")
         break
-    if string == '':
-        break
     repeat = re.search(r"([a-z]{2,}?).*\1", string)
     if repeat != None:
         double = re.search(r"([a-z]).\1", string)

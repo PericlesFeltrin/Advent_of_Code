@@ -6,7 +6,6 @@ while True:
     except EOFError:
         print ("Error: EOF or empty input!")
         break
-
     not_in = re.search(r"(ab|cd|pq|xy)", string)
     if not_in == None:
         vowels = re.findall(r"[aeiou]", string)
